@@ -1,0 +1,10 @@
+<div>    
+    <p> Ingrese Casa:  <input type="text" [(ngModel)]="casa" placeholder="Ej: Gryffindor"> </p>
+    <button (click)="getPersonaje(casa)">Ejecutar</button>
+</div>
+<br>
+<ul>
+    <li *ngFor="let p of personajeHP">
+        {{p.name}} - {{p.gender}}
+    </li>
+</ul>
